@@ -304,8 +304,8 @@ static void tick_nohz_stop_sched_tick(struct tick_sched *ts)
 		return;
 	}
 
-	if (unlikely(ts->nohz_mode == NOHZ_MODE_INACTIVE))
-		return;
+    if (unlikely(ts->nohz_mode == NOHZ_MODE_INACTIVE))
+        return;
 
 	if (need_resched())
 		return;
